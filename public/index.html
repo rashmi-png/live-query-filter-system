@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Live Query Filter System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🔎 Live Query Filter System</h1>
+        <p>Search and filter products instantly</p>
+    </header>
+
+    <main>
+
+        <section class="search-panel">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+            >
+
+            <div class="categories">
+
+                <label>
+                    <input
+                        type="radio"
+                        name="category"
+                        value="All"
+                        checked
+                    >
+                    All
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="category"
+                        value="Electronics"
+                    >
+                    Electronics
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="category"
+                        value="Books"
+                    >
+                    Books
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="category"
+                        value="Clothing"
+                    >
+                    Clothing
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="category"
+                        value="Home"
+                    >
+                    Home
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="category"
+                        value="Sports"
+                    >
+                    Sports
+                </label>
+
+            </div>
+
+        </section>
+
+
+        <section class="results-header">
+
+            <h2>Search Results</h2>
+
+            <p id="resultCount">
+                Loading...
+            </p>
+
+        </section>
+
+
+        <section id="loading">
+            <p>Loading results...</p>
+        </section>
+
+
+        <section
+            id="resultsGrid"
+            class="results-grid"
+        ></section>
+
+
+        <section
+            id="emptyState"
+            class="empty-state"
+            style="display: none;"
+        >
+            <h3>No results found</h3>
+            <p>Try another search or category.</p>
+        </section>
+
+
+        <section class="pagination">
+
+            <button id="previousButton">
+                ← Previous
+            </button>
+
+            <span id="pageInfo">
+                Page 1
+            </span>
+
+            <button id="nextButton">
+                Next →
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Live Query Filter System © 2026</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
